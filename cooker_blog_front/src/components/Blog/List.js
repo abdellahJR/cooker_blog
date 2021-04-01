@@ -4,6 +4,7 @@ import Pagination from '@material-ui/lab/Pagination';
 import Post from './Article';
 
 
+
 export default function List(props) {
 
   const { data, error } = props;
