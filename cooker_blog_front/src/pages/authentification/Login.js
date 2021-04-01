@@ -113,6 +113,7 @@ export default function SignIn() {
                         id="email"
                         label="Email Address"
                         name="email"
+                        className="email"
                         autoComplete="email"
                         autoFocus
                         onChange={handleChange}
@@ -122,6 +123,7 @@ export default function SignIn() {
                         margin="normal"
                         required
                         fullWidth
+                        className="password"
                         name="password"
                         label="Mot de passe"
                         type="password"
