@@ -25,7 +25,7 @@ axiosInstance.interceptors.response.use(
 			alert(
 				'A server/network error occurred. ' +
 					'Looks like CORS might be the problem. ' +
-					'Sorry about this - we will get it fixed shortly.'
+					'Sorry about this - we will get it fixed shortly.'+ error
 			);
 			return Promise.reject(error);
 		}
@@ -85,5 +85,4 @@ axiosInstance.interceptors.response.use(
 		return Promise.reject(error);
 	}
 );
-
 export default axiosInstance;
